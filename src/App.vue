@@ -1,17 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <WaterHome />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WaterHome from './views/WaterHome.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    WaterHome,
+  },
+};
 </script>
 
 <style>
@@ -22,5 +22,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+</style>
+<style>
+body {
+  margin: 0;
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
 }
 </style>
